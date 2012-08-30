@@ -43,6 +43,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/rel_interaction_vote"
         android:layout_width="match_parent"
         android:layout_height="115dp"
         android:layout_margin="10dip"
@@ -76,6 +77,7 @@
             android:paddingBottom="10dip">
             
             <RelativeLayout
+                android:id="@+id/rel_interaction_critic"
                 android:layout_width="wrap_content"
                 android:layout_height="110dip"
                 android:layout_marginRight="5dip"
@@ -92,6 +94,7 @@
             </RelativeLayout>
             
             <RelativeLayout
+                android:id="@+id/rel_interaction_award"
                 android:layout_width="wrap_content"
                 android:layout_height="110dip"
                 android:layout_marginLeft="5dip"
@@ -113,6 +116,7 @@
             android:paddingBottom="10dip">
             
              <RelativeLayout
+                 android:id="@+id/rel_interaction_essence"
                  android:layout_width="wrap_content"
                  android:layout_height="110dip"
                  android:layout_marginRight="5dip"
@@ -127,6 +131,7 @@
             </RelativeLayout>
             
             <RelativeLayout
+                android:id="@+id/rel_interaction_depth"
                 android:layout_width="wrap_content"
                 android:layout_height="110dip"
                 android:layout_marginLeft="5dip"
