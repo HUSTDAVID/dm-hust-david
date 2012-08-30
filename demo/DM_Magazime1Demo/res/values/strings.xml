@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">DMDemo1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <!-- test test test test -->
+    <string name="title1">五楼品牌服装升级</string>
+    <string name="body1">形象全面升级，隆重开幕，快来体验吧。（哥伦比亚，新亚当，NIKE,LIVIS诺诗蓝，狼爪）</string>
+    
+    <string name="title2">清凉夏，群光2楼升级待卖</string>
+    <string name="body2">匡威，大嘴猴，i‘m david。熊猫人形象全面升级，隆重开幕，快来体验吧!</string>
+    
+    <string name="title3">森田面膜买一送一</string>
+    <string name="body3">BIF缤纷夏日，森田有礼！药妆玻尿酸面膜买一送一现价59元</string>
+    
+    <string name="title4">JACK JONES特卖</string>
+    <string name="body4">活动时间 ：08.02-08.15</string>
+    
+    <string name="title5">ADIDAS等专柜全新形象登场</string>
+    <string name="body5">5f运动休闲馆ADIDAS,NIKE,360，LE COQ SPORTIF ,AIDDAS生活全新形象闪亮开幕，赶快来体验不一样的感觉吧!</string>
+
+</resources>
