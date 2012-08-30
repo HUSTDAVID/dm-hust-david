@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">DM_InteractionDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">互动Demo</string>
+    
+    <string name="interaction">互动</string>
+    <string name="vote">投票</string>
+    <string name="critic">评论</string>
+    <string name="award">有奖调查</string>
+    <string name="essence">精华</string>
+    <string name="depth">深度</string>
+
+</resources>

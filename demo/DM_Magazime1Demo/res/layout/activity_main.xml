@@ -28,13 +28,13 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/txt_magezime_1_title1"
+                android:id="@+id/txt_magezine_1_title1"
                 style="@style/magazine_title"
                 android:layout_width="match_parent"
                 android:text="@string/title1" />
 
             <TextView
-                android:id="@+id/txt_magezime_1_body1"
+                android:id="@+id/txt_magezine_1_body1"
                 style="@style/magazine_body"
                 android:text="@string/body1" />
         </LinearLayout>
@@ -51,12 +51,12 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/txt_magezime_1_title2"
+                android:id="@+id/txt_magezine_1_title2"
                 style="@style/magazine_title"
                 android:text="@string/title2" />
 
             <TextView
-                android:id="@+id/txt_magezime_1_body2"
+                android:id="@+id/txt_magezine_1_body2"
                 style="@style/magazine_body"
                 android:text="@string/body2" />
 
@@ -69,11 +69,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
     <ImageView
-        android:id="@+id/img_magazime_1"
+        android:id="@+id/img_magazine_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:src="@drawable/magazime_image" />
+        android:src="@drawable/magazine_image" />
     </TableRow>
     
      <TableRow
@@ -87,12 +87,12 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/txt_magazime_1_title3"
+                android:id="@+id/txt_magazine_1_title3"
                 style="@style/magazine_title"
                 android:text="@string/title3" />
 
             <TextView  
-                android:id="@+id/txt_magazime_1_body3"
+                android:id="@+id/txt_magazine_1_body3"
                 style="@style/magazine_body"
                 android:text="@string/body3" />
         </LinearLayout>
@@ -108,12 +108,12 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/txt_magazime_1_title4"
+                android:id="@+id/txt_magazine_1_title4"
                 style="@style/magazine_title"
                 android:text="@string/title4" />
 
             <TextView
-                android:id="@+id/txt_magazime_1_body4"
+                android:id="@+id/txt_magazine_1_body4"
                 style="@style/magazine_body"
                 android:text="@string/body4" />
 
@@ -140,7 +140,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/txt_magazime_1_title5"
+                android:id="@+id/txt_magazine_1_title5"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
@@ -151,7 +151,7 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/txt_magazime_1_body5"
+                android:id="@+id/txt_magazine_1_body5"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"

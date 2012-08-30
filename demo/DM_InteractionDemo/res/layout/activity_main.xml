@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/interaction_header" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="26dp"
+            android:textColor="@color/white"
+            android:text="26'c-38'c" />
+
+        <TextView
+            android:id="@+id/txt_interaction_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:text="武汉" />
+
+        <TextView
+            android:id="@+id/txt_interaction_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="@string/interaction" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_margin="10dip"
+        android:background="@drawable/interaction_vote" >
+
+        <Button
+        android:id="@+id/btn_interaction_vote"
+        android:layout_width="fill_parent"
+        android:layout_height="37dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/translucence_black"
+        android:textColor="@color/white"
+        android:gravity="left"
+        android:paddingLeft="20dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:textSize="20sp"
+        android:text="@string/vote" />
+    </RelativeLayout>
+
+   
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"> 
+        
+        <TableRow 
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="10dip">
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dip"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/interaction_critic" 
+                android:orientation="vertical">
+                
+                <Button
+            android:id="@+id/btn_interaction_critic"
+            style="@style/interaction_btn"
+            android:text="@string/critic" />
+                               
+               
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/interaction_award" >
+                
+                 <Button
+            android:id="@+id/btn_interaction_award"
+            style="@style/interaction_btn"
+            android:text="@string/award" />
+                
+            </RelativeLayout>
+            
+        </TableRow>
+        
+        <TableRow 
+             android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="10dip">
+            
+             <RelativeLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="110dip"
+                 android:layout_marginRight="5dip"
+                 android:layout_weight="1"
+                 android:background="@drawable/interaction_essence" >
+                 
+                  <Button
+            android:id="@+id/btn_interaction_essence"
+            style="@style/interaction_btn"
+            android:text="@string/essence" />
+                
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="@drawable/interaction_depth" >
+                  
+                 <Button
+            android:id="@+id/btn_interaction_depth"
+            style="@style/interaction_btn"
+            android:text="@string/depth" />
+                
+            </RelativeLayout>
+            
+        </TableRow>
+        
+    </TableLayout>
+
+</LinearLayout>
