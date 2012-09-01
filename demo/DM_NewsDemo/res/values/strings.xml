@@ -3,8 +3,8 @@
     <string name="app_name">DM_NewsDemo</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">新闻ItemDemo</string>
     
-    <string name="title"> 武汉持续</string>
-
+    <string name="title"> 武汉持续高温破46年纪录</string>
+    <string name="body">昨日午后武汉市区最高温度飙升至37.5，新洲区更是高达37.9，再创今年新高</string>
 </resources>
