@@ -3,15 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ListView 
-        android:id="@+id/listview_news"
+    <com.lgq.dm_newsdemo.ScrollViewExtend
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dip"
-        android:layout_marginRight="10dip"
-        android:dividerHeight="2px">
-        
-    </ListView>
-    
+        android:layout_height="wrap_content">
+   </com.lgq.dm_newsdemo.ScrollViewExtend>
 
+    <LinearLayout
+        android:id="@+id/layout_image_slide"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rel_image_slide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/image_slide_page"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+    </LinearLayout>
+   
 </LinearLayout>

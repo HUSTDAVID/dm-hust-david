@@ -2,128 +2,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+    android:orientation="vertical">
+	<include
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    layout="@layout/header" 
+	    android:layout_weight="0.3">
+	</include>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dip"
+        android:background="@color/divider" android:layout_marginLeft="10dip" android:layout_marginRight="10dip"/>
+
     <TableRow
+        android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" >
-
+        android:layout_height="wrap_content" android:layout_weight="1.2">
+
         <LinearLayout
             android:id="@+id/layout1_magazine_1"
             style="@style/magazine_news_layout_left"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:orientation="vertical" >
-
+
             <TextView
-                android:id="@+id/txt_magezine_1_title1"
+                android:id="@+id/txt_magazine_1_title1"
                 style="@style/magazine_title"
-                android:layout_width="match_parent"
+                android:singleLine="true"
                 android:text="@string/title1" />
 
             <TextView
-                android:id="@+id/txt_magezine_1_body1"
+                android:id="@+id/txt_magazine_1_body1"
                 style="@style/magazine_body"
+                android:layout_height="match_parent"
                 android:text="@string/body1" />
         </LinearLayout>
-              
+
+        <View
+            android:layout_width="0.8dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" >
+        </View>
 
         <LinearLayout
+            android:id="@+id/layout2_magazine_1"
             style="@style/magazine_news_layout_right"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_gravity="center_vertical"
-            android:orientation="vertical" >
+            android:orientation="vertical" android:layout_gravity="center_vertical">
 
             <TextView
-                android:id="@+id/txt_magezine_1_title2"
+                android:id="@+id/txt_magazine_1_title2"
                 style="@style/magazine_title"
+                android:singleLine="true"
                 android:text="@string/title2" />
 
             <TextView
-                android:id="@+id/txt_magezine_1_body2"
+                android:id="@+id/txt_magazine_1_body2"
                 style="@style/magazine_body"
                 android:text="@string/body2" />
-
         </LinearLayout>
-
     </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
 
     <ImageView
         android:id="@+id/img_magazine_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/magazine_image" />
-    </TableRow>
-    
-     <TableRow
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content" 
-         android:layout_weight="0.8">
+        android:src="@drawable/demo"/>
+
+    <TableRow
+        android:id="@+id/medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_weight="0.8">
 
         <LinearLayout
+            android:id="@+id/layout3_magazine_1"
             style="@style/magazine_news_layout_left"
-            android:orientation="vertical" 
-            android:layout_gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
 
             <TextView
                 android:id="@+id/txt_magazine_1_title3"
                 style="@style/magazine_title"
+                android:singleLine="true"
                 android:text="@string/title3" />
 
-            <TextView  
+            <TextView
                 android:id="@+id/txt_magazine_1_body3"
                 style="@style/magazine_body"
                 android:text="@string/body3" />
         </LinearLayout>
-        
-        
+
+        <View
+            android:layout_width="0.8dip"
+            android:layout_height="fill_parent"
+            android:background="@color/divider" />
 
         <LinearLayout
+            android:id="@+id/layout4_magazine_1"
             style="@style/magazine_news_layout_right"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:orientation="vertical" >
+            android:layout_weight="1"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/txt_magazine_1_title4"
                 style="@style/magazine_title"
+                android:singleLine="true"
                 android:text="@string/title4" />
 
             <TextView
                 android:id="@+id/txt_magazine_1_body4"
                 style="@style/magazine_body"
                 android:text="@string/body4" />
-
         </LinearLayout>
-       </TableRow>
-       
-     
-     
-      
-      <TableRow 
-         android:layout_weight="1"
+    </TableRow>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dip"
+        android:background="@color/divider" android:layout_marginLeft="10dip" android:layout_marginRight="10dip"/>
+
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">       
-      <LinearLayout
-            android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_gravity="center_vertical"
+            android:layout_weight="1"
             android:orientation="vertical" >
 
             <TextView
@@ -145,8 +163,7 @@
                 android:layout_marginRight="10dp"
                 android:text="@string/body5"
                 android:textSize="12sp" />
-
         </LinearLayout>
-        </TableRow>
+    </TableRow>
 
 </LinearLayout>
