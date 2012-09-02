@@ -1,6 +1,4 @@
-package com.example.dmdemo1;
-
-import com.example.dmdemo.R;
+package qd.hust.dm_magazine2demo;
 
 import android.os.Bundle;
 import android.app.Activity;

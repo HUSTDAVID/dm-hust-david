@@ -8,4 +8,5 @@
     <color name="red">#e6571d</color>
     <color name="blank">#000000</color>
     <color name="lightgrey">#a9a9a9</color>
+    <color name="divider">#cdcdcd</color>
 </resources>

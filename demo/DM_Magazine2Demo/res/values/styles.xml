@@ -3,8 +3,8 @@
     <style name="AppTheme" parent="android:Theme.Light" />
     
     <style name="magazine_news_layout_left">
-        <item name="android:layout_height">fill_parent</item>
-         <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+         <item name="android:layout_width">wrap_content</item>
          <item name="android:paddingLeft">10dip</item>
          <item name="android:paddingRight">5dip</item>
          <item name="android:paddingTop">5dip</item>
@@ -12,8 +12,8 @@
     </style>
     
      <style name="magazine_news_layout_right">
-        <item name="android:layout_height">fill_parent</item>
-        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
          <item name="android:paddingLeft">5dip</item>
          <item name="android:paddingRight">10dip</item>
          <item name="android:paddingTop">5dip</item>
@@ -21,17 +21,17 @@
     </style>
     
     <style name="magazine_title">
-        <item name="android:layout_width">fill_parent</item>       
+        <item name="android:layout_width">match_parent</item>       
         <item name="android:layout_height">25dip</item>
         <item name="android:layout_marginBottom">5dip</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">17sp</item>
     </style> 
     
     
    <style name="magazine_body">
-        <item name="android:lines" >3</item>
+        <item name="android:lines" >2</item>
         <item name="android:ellipsize">end</item>
-        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textSize">12sp</item>
     </style>
