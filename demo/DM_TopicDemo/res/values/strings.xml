@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">DM_TopicDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">话题Demo</string>
+    
+    <string name="title1">中国成全民医保国家何喜之有</string>
+    <string name="title2">俄罗斯为何总是霸气外露</string>
+    <string name="title3">你所不知的朝鲜"白富美"们</string>
+    <string name="title4">女举队员 "叛国"疑云</string>
+    <string name="title5">有"纯种北京人"这种事吗</string>
+
+</resources>
