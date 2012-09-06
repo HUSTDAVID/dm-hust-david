@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-public class MainActivity extends Activity implements OnClickListener{
+public class InteractionActivity extends Activity implements OnClickListener{
 
 	RelativeLayout relVote;
 	RelativeLayout relCritic;
@@ -72,23 +72,23 @@ public class MainActivity extends Activity implements OnClickListener{
 		{
 		case R.id.rel_interaction_vote:
 		case R.id.btn_interaction_vote:
-			Toast.makeText(MainActivity.this, "投票", Toast.LENGTH_SHORT).show();
+			Toast.makeText(InteractionActivity.this, "投票", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.rel_interaction_critic:
 		case R.id.btn_interaction_critic:
-			Toast.makeText(MainActivity.this, "评论", Toast.LENGTH_SHORT).show();
+			Toast.makeText(InteractionActivity.this, "评论", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.rel_interaction_award:
 		case R.id.btn_interaction_award:
-			Toast.makeText(MainActivity.this, "有奖竞猜", Toast.LENGTH_SHORT).show();
+			Toast.makeText(InteractionActivity.this, "有奖竞猜", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.rel_interaction_essence:
 		case R.id.btn_interaction_essence:
-			Toast.makeText(MainActivity.this, "精华", Toast.LENGTH_SHORT).show();
+			Toast.makeText(InteractionActivity.this, "精华", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.rel_interaction_depth:
 		case R.id.btn_interaction_depth:
-			Toast.makeText(MainActivity.this, "深度", Toast.LENGTH_SHORT).show();
+			Toast.makeText(InteractionActivity.this, "深度", Toast.LENGTH_SHORT).show();
 			break;
 		}
 		
