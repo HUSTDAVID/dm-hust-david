@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, WH_DMActivity!</string>
     <string name="app_name">WH_DM</string>
-
+	<string name="collections">我的收藏</string>
+	<string name="favorites">猜你喜欢</string>
+	<string name="temp1">柏氏专卖</string>
+	<string name="temp2">Dior迪奥特价</string>
+	<string name="temp3">东风标致4S店</string>
+	<string name="temp4">BMW专营店</string>
 </resources>
