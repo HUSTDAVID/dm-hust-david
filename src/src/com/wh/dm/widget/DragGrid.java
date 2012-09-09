@@ -128,7 +128,7 @@ public class DragGrid extends GridView {
                 windowParams = new WindowManager.LayoutParams();
                 windowParams.gravity = Gravity.TOP | Gravity.LEFT;
                 windowParams.x = fromView.getLeft() + 28;
-                windowParams.y = fromView.getTop() + (int) (40 * Configure.screenDensity) + 8;
+                windowParams.y = fromView.getTop() + (int) (25 * Configure.screenDensity) + 8;
                 windowParams.alpha = 0.8f;
                 windowParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
                 windowParams.width = WindowManager.LayoutParams.WRAP_CONTENT;
@@ -340,7 +340,7 @@ public class DragGrid extends GridView {
                 Animation.RELATIVE_TO_SELF, x, Animation.RELATIVE_TO_SELF, 0,
                 Animation.RELATIVE_TO_SELF, y);
         go.setFillAfter(true);
-        go.setDuration(550);
+        go.setDuration(200);
         return go;
     }
 
@@ -351,15 +351,15 @@ public class DragGrid extends GridView {
                 Animation.RELATIVE_TO_SELF, x, Animation.RELATIVE_TO_SELF, y,
                 Animation.RELATIVE_TO_SELF, y);
         go.setFillAfter(true);
-        go.setDuration(550);
+        go.setDuration(300);
 
         AlphaAnimation alpha = new AlphaAnimation(0.1f, 1.0f);
         alpha.setFillAfter(true);
-        alpha.setDuration(550);
+        alpha.setDuration(300);
 
         ScaleAnimation scale = new ScaleAnimation(1.2f, 1.0f, 1.2f, 1.0f);
         scale.setFillAfter(true);
-        scale.setDuration(550);
+        scale.setDuration(300);
 
         set.addAnimation(go);
         set.addAnimation(alpha);

@@ -16,7 +16,6 @@ import android.os.Vibrator;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.view.animation.TranslateAnimation;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -34,8 +33,6 @@ public class MainActivity extends Activity {
     TextView txt_page;
     private ImageView delImage;
     LinearLayout.LayoutParams param;
-
-    TranslateAnimation left, right;
     Animation up, down;
 
     public static final int PAGE_SIZE = 8;
