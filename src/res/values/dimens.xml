@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!-- MainActivity -->
     <dimen name="header_margin_top">10dip</dimen>
     <dimen name="header_margin_left">10dip</dimen>
     <dimen name="header_margin_right">10dip</dimen>
     <dimen name="txt_size_normal">20sp</dimen>
+    <dimen name="sub_left">18sp</dimen>
+    <dimen name="sub_right">14sp</dimen>
+    <dimen name="list_item_height">25dip</dimen>
+    <dimen name="news_normal">14sp</dimen>
+
 </resources>
