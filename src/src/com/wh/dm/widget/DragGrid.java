@@ -72,10 +72,12 @@ public class DragGrid extends GridView {
                 mLastX = x;
                 mLastY = y;
                 dragPosition = dropPosition = position;
+
                 if (Configure.curentPage == 0 && (position == 0 || position == 1)) {
                     Configure.isMove = false;
                     return false;
                 }
+
                 if (dragPosition == AdapterView.INVALID_POSITION) {
                     Configure.isMove = false;
                     return false;

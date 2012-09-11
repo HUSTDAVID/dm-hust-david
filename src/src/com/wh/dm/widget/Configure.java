@@ -9,6 +9,9 @@ public class Configure {
     public static boolean isMove = false;
     public static boolean isChangingPage = false;
     public static boolean isDelDark = false;
+    public static boolean isFav = false;
+    public static boolean isCollect = false;
+
     public static int screenHeight = 0;
     public static int screenWidth = 0;
     public static float screenDensity = 0;
