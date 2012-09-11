@@ -9,6 +9,7 @@ import com.wh.dm.widget.DragGridAdapter;
 import com.wh.dm.widget.ScrollLayout;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -202,8 +203,15 @@ public class MainActivity extends Activity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
-            public void onItemClick(AdapterView<?> arg0, View arg1, final int arg2, long arg3) {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int pos, long arg3) {
 
+                if (pos == 0) {
+                    Intent it = new Intent(MainActivity.this, DM_Tab_1Activity.class);
+                    startActivity(it);
+                } else {
+                    Intent it = new Intent(MainActivity.this, DM_Tab_2Activity.class);
+                    startActivity(it);
+                }
             }
         });
         gridView.setSelector(R.anim.grid_light);
