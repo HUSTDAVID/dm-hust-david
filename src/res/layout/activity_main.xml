@@ -3,14 +3,14 @@
     android:id="@+id/relate"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/index_background" >
-
+    android:background="@drawable/index_bg" >
+
     <com.wh.dm.widget.ScrollLayout
         android:id="@+id/views"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_marginTop="20dip"
-        android:background="@drawable/index_background" />
+        android:background="@drawable/index_bg" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
