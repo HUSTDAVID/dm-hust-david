@@ -3,5 +3,53 @@
 
     <string name="hello">Hello World, WH_DMActivity!</string>
     <string name="app_name">WH_DM</string>
+    
+    <string name="interaction">互动</string>
+    <string name="headline">头条</string>
+    <string name="news">新闻</string>
+    <string name="photo">组图</string>
+    <string name="subscribe">订阅</string>
+    <string name="store">收藏</string>
+    <string name="vote">投票</string>
+    <string name="critic">评论</string>
+    <string name="award">有奖调查</string>
+    <string name="essence">精华</string>
+    <string name="depth">深度</string>
+    <string name="topic">话题</string>
+    <string name="house">房产</string>
+    <string name="car">汽车</string>
+    <string name="fashion">时尚</string>
+    <string name="lift">生活</string>
+    <string name="traval">旅游</string>
+    <string name="magazine">杂志</string>
+    <string name="news_image">新闻附图</string>
+    
+    <!-- 新闻详情 -->
+    <string name="news_title">银行称多给储户400元  冻结其账户逼“还钱”</string>
+    <string name="news_time">2010-12-30</string>
+    <string name="news_source">来源：荆楚网</string>
+    <string name="news_user">手机版网友</string>
+    <string name="news_reply_time">13小时前</string>
+    <string name="news_reply_body">真搞笑，银行多给了就要要回，少给了离柜不负责!</string>
+    <string name="news_reply_top">顶1152</string>
+    <string name="news_reply">回复</string>
+    
+    
+    <!-- test data -->
+    <string name="mag_title1">五楼品牌服装升级</string>
+    <string name="mag_body1">形象全面升级，隆重开幕，快来体验吧。（哥伦比亚，新亚当，NIKE,LIVIS诺诗蓝，狼爪）</string>    
+    <string name="mag_title2">清凉夏，群光2楼升级待卖</string>
+    <string name="mag_body2">匡威，大嘴猴，i‘m david。熊猫人形象全面升级，隆重开幕，快来体验吧!</string>    
+    <string name="mag_title3">森田面膜买一送一</string>
+    <string name="mag_body3">BIF缤纷夏日，森田有礼！药妆玻尿酸面膜买一送一现价59元</string>    
+    <string name="mag_title4">JACK JONES特卖</string>
+    <string name="mag_body4">活动时间 ：08.02-08.15</string>    
+    <string name="mag_title5">ADIDAS等专柜全新形象登场</string>
+    <string name="mag_body5">5f运动休闲馆ADIDAS,NIKE,360，LE COQ SPORTIF ,AIDDAS生活全新形象闪亮开幕，赶快来体验不一样的感觉吧!</string>
+    <string name="headline_title">武汉持续高温破46年纪录</string>
+    <string name="headline_body">昨日午后武汉市区最高温度飙升至37.5\'c，新洲区更高达37.9\'c，再创今年新高</string>
+    <string name="news_body">哈哈哈哈哈啊啊啊啊啊啊啊哈哈哈哈哈哈哈\n哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊啊啊啊啊啊啊啊啊啊哈啊啊\n\n啊啊啊啊啊啊啊啊啊啊哈啊啊啊啊啊啊啊啊啊啊啊\n哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊啊
+        哈哈\n啊啊啊啊啊啊啊啊啊啊哈啊啊啊啊啊啊啊啊啊啊啊\n哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊啊啊啊啊啊</string>
+    
 
 </resources>

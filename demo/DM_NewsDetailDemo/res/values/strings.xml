@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">DM_NewsDetailDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="title">银行称多给储户400元  冻结其账户逼“还钱”</string>
+    <string name="time">2010-12-30</string>
+    <string name="source">来源：荆楚网</string>
+    <string name="user">手机版网友</string>
+    <string name="reply_time">13小时前</string>
+    <string name="reply_body">真搞笑，银行多给了就要要回，少给了离柜不负责!</string>
+    <string name="reply_top">顶1152</string>
+    <string name="reply">回复</string>
+
+</resources>

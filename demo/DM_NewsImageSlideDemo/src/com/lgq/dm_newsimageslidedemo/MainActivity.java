@@ -2,17 +2,19 @@
 package com.lgq.dm_newsimageslidedemo;
 
 import android.app.Activity;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -43,19 +45,15 @@ public class MainActivity extends Activity {
         };
     };
 
+    //
+    ListView listView;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
     }
 
     @Override
@@ -94,6 +92,7 @@ public class MainActivity extends Activity {
 
         txt_title = (TextView) findViewById(R.id.txt_news_title);
         viewPager = (ViewPager) findViewById(R.id.vp_news_image_slide);
+        listView = (ListView) findViewById(R.id.lv_news);
 
         // 图片资源id
         ImageResId = new int[] {
@@ -125,6 +124,17 @@ public class MainActivity extends Activity {
 
         viewPager.setAdapter(new MyAdapter());
         viewPager.setOnPageChangeListener(new MyPageChangeListener());
+
+        // listview 的数据
+        NewsAdapter adapter = new NewsAdapter(MainActivity.this);
+        for (int i = 0; i < 10; i++) {
+            Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.news_item_image);
+            String title = getResources().getString(R.string.title);
+            String body = getResources().getString(R.string.body);
+            adapter.addItem(bmp, i + ":" + title, i + ":" + body);
+        }
+        listView.setAdapter(adapter);
+
     }
 
     /*

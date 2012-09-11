@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#da3635"
+            android:layout_alignParentLeft="true"
+            android:text="@string/user" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#b1b1b1"
+            android:text="@string/reply_time" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:padding="10dip">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reply_body" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/button2"
+            android:background="#e4e4e4"
+            android:text="@string/reply_top" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="#e4e4e4"
+            android:text="@string/reply" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">DM_OrderDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="ad">俏江南2012春夏新款节假日套餐，线上首发！仅999元，享受原价2088元【俏江南】合家欢乐宴-大厅10人餐（含服务费）！尊荣服务，惊艳口感</string>
+
+</resources>

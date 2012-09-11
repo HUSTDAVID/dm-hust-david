@@ -20,8 +20,8 @@
                 android:id="@android:id/tabs"
                 android:layout_alignParentBottom="true"
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
-                android:background="#7CFC00"/>
+                android:layout_height="60dip"
+                android:background="@drawable/bottom_listbg"/>
            
     </RelativeLayout>
    
