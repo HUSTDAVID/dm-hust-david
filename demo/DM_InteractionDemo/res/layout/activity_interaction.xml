@@ -1,7 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
     android:background="@color/white"
     android:orientation="vertical" >
 
@@ -11,22 +11,25 @@
         android:id="@+id/rel_interaction_vote"
         android:layout_width="match_parent"
         android:layout_height="115dp"
-        android:layout_margin="10dip"
-        android:background="@drawable/interaction_vote" >
+        android:layout_margin="10dip">
 
+        <ImageView 
+            android:id="@+id/img_1_interaction"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/interaction_vote"/>
         <Button
         android:id="@+id/btn_interaction_vote"
         android:layout_width="fill_parent"
         android:layout_height="37dip"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/img_1_interaction"
+        android:layout_alignRight="@+id/img_1_interaction"
+        android:layout_alignBottom="@+id/img_1_interaction"
         android:background="@color/translucence_black"
         android:textColor="@color/white"
         android:gravity="left"
-        android:paddingLeft="20dip"
-        android:paddingTop="5dip"
-        android:paddingBottom="5dip"
         android:textSize="20sp"
         android:text="@string/vote" />
     </RelativeLayout>
@@ -47,13 +50,21 @@
                 android:layout_height="110dip"
                 android:layout_marginRight="5dip"
                 android:layout_weight="1"
-                android:background="@drawable/interaction_critic" 
                 android:orientation="vertical">
+                
+                 <ImageView
+                     android:id="@+id/img_2_interaction"
+                     android:layout_width="fill_parent"
+                     android:layout_height="match_parent"
+                     android:src="@drawable/interaction_critic" />
                 
                 <Button
-            android:id="@+id/btn_interaction_critic"
-            style="@style/interaction_btn"
-            android:text="@string/critic" />
+		            android:id="@+id/btn_interaction_critic"
+		            style="@style/interaction_btn"
+		            android:layout_alignLeft="@+id/img_2_interaction"
+		            android:layout_alignRight="@+id/img_2_interaction"
+		            android:layout_alignBottom="@+id/img_2_interaction"
+		            android:text="@string/critic" />
                                
                
             </RelativeLayout>
@@ -63,13 +74,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="110dip"
                 android:layout_marginLeft="5dip"
-                android:layout_weight="1"
-                android:background="@drawable/interaction_award" >
+                android:layout_weight="1" >
+                
+                <ImageView 
+		            android:id="@+id/img_3_interaction"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:src="@drawable/interaction_award"/>
                 
                  <Button
-            android:id="@+id/btn_interaction_award"
-            style="@style/interaction_btn"
-            android:text="@string/award" />
+		            android:id="@+id/btn_interaction_award"
+		            style="@style/interaction_btn"
+		            android:layout_alignLeft="@+id/img_3_interaction"
+		            android:layout_alignRight="@+id/img_3_interaction"
+		            android:layout_alignBottom="@+id/img_3_interaction"
+		            android:text="@string/award" />
                 
             </RelativeLayout>
             
@@ -85,13 +104,23 @@
                  android:layout_width="wrap_content"
                  android:layout_height="110dip"
                  android:layout_marginRight="5dip"
-                 android:layout_weight="1"
-                 android:background="@drawable/interaction_essence" >
+                 android:layout_weight="1" >
+                 
+                   <ImageView 
+		            android:id="@+id/img_4_interaction"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:layout_alignParentBottom="true"
+		            android:src="@drawable/interaction_essence"/>
                  
                   <Button
-            android:id="@+id/btn_interaction_essence"
-            style="@style/interaction_btn"
-            android:text="@string/essence" />
+		            android:id="@+id/btn_interaction_essence"
+		            style="@style/interaction_btn"
+		            android:layout_alignParentBottom="true"
+		            android:layout_alignLeft="@+id/img_4_interaction"
+		            android:layout_alignRight="@+id/img_4_interaction"
+		            android:layout_alignBottom="@+id/img_4_interaction"
+		            android:text="@string/essence" />
                 
             </RelativeLayout>
             
@@ -100,13 +129,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="110dip"
                 android:layout_marginLeft="5dip"
-                android:layout_weight="1"
-                android:background="@drawable/interaction_depth" >
+                android:layout_weight="1">
+                  
+                <ImageView 
+		            android:id="@+id/img_5_interaction"
+		            android:layout_width="fill_parent"
+		            android:layout_height="fill_parent"
+		            android:src="@drawable/interaction_depth"/>
                   
                  <Button
-            android:id="@+id/btn_interaction_depth"
-            style="@style/interaction_btn"
-            android:text="@string/depth" />
+		            android:id="@+id/btn_interaction_depth"
+		            style="@style/interaction_btn"
+		            android:layout_alignLeft="@+id/img_5_interaction"
+		            android:layout_alignRight="@+id/img_5_interaction"
+		            android:layout_alignBottom="@+id/img_5_interaction"
+		            android:text="@string/depth" />
                 
             </RelativeLayout>
             
