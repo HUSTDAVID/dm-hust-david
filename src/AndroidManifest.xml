@@ -75,16 +75,16 @@
              android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
-         <activity
+        <!--  <activity
             android:name=".activity.WH_DMActivity"
              android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-         <activity
+        </activity> -->
+       <!--   <activity
             android:name=".activity.CollectActivity"
              android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+        </activity> -->
     </application>
 
     <uses-permission android:name="android.permission.VIBRATE" />
