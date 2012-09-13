@@ -9,6 +9,9 @@ import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
@@ -20,10 +23,15 @@ import java.util.HashMap;
 
 public class DM_SubActivity extends Activity {
 
+    static final int LEFT_CHANGE = 100;
+
     ListView lvSubLeft;
     ListView lvSubRight;
+    MyHandler myHandler;
 
     int currentItem = 0;
+    int nextItem = 0;
+    int currentLeftId = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +43,7 @@ public class DM_SubActivity extends Activity {
         initViews();
         loadDataLeft();
         loadDataRight(0);
+        myHandler = new MyHandler();
     }
 
     private void initViews() {
@@ -69,15 +78,18 @@ public class DM_SubActivity extends Activity {
 
                 HashMap<String, Object> map = (HashMap<String, Object>) parent.getAdapter()
                         .getItem(position);
-                int leftId = (Integer) map.get("id");
+                currentLeftId = (Integer) map.get("id");
 
-                parent.getChildAt(currentItem).setBackgroundColor(
-                        getResources().getColor(R.color.sub_left_bg));
-                view.setBackgroundColor(getResources().getColor(R.color.sub_right_bg));
+                /*
+                 * parent.getChildAt(currentItem).setBackgroundColor(
+                 * getResources().getColor(R.color.sub_left_bg));
+                 * view.setBackgroundColor
+                 * (getResources().getColor(R.color.sub_right_bg)); nextItem =
+                 * position;
+                 */
+                nextItem = position;
+                myHandler.sendEmptyMessage(LEFT_CHANGE);
 
-                currentItem = position;
-
-                loadDataRight(leftId);
             }
         });
 
@@ -97,5 +109,33 @@ public class DM_SubActivity extends Activity {
         }
 
         lvSubRight.setAdapter(rightAdapter);
+    }
+
+    class MyHandler extends Handler {
+
+        public MyHandler() {
+
+        }
+
+        public MyHandler(Looper l) {
+
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+
+            switch (msg.what) {
+                case LEFT_CHANGE:
+                    lvSubLeft.getChildAt(currentItem).setBackgroundColor(
+                            getResources().getColor(R.color.sub_left_bg));
+                    lvSubLeft.getChildAt(nextItem).setBackgroundColor(
+                            getResources().getColor(R.color.sub_right_bg));
+                    currentItem = nextItem;
+                    loadDataRight(currentLeftId);
+                    break;
+            }
+
+        }
+
     }
 }

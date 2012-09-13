@@ -47,7 +47,7 @@ public class DM_Tab_1Activity extends TabActivity implements OnTabChangeListener
                 .setContent(new Intent(this, DM_SubActivity.class)));
 
         tabHost.addTab(tabHost.newTabSpec("store").setIndicator(createTabView(STORE))
-                .setContent(new Intent(this, DM_NewsActivity.class)));
+                .setContent(new Intent(this, DM_CollectActivity.class)));
 
         tabHost.setOnTabChangedListener(this);
         changeTabTxtColor();

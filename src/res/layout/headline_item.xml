@@ -17,7 +17,8 @@
         android:contentDescription="@string/news_image"
         android:layout_marginTop="8dip"
         android:layout_alignParentLeft="true"
-        android:src="@drawable/news_pic01" />
+        android:background="@drawable/news_img_background"
+        android:src="@drawable/temp_news_img" />
 
     <RelativeLayout
         android:id="@+id/layout_headline_item_right"

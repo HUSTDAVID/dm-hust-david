@@ -87,7 +87,7 @@ public class DM_HeadLineActivity extends Activity {
         // add data
         String title = getResources().getString(R.string.headline_title);
         String body = getResources().getString(R.string.headline_body);
-        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.news_pic01);
+        Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.temp_news_img);
         for (int i = 0; i < 10; i++) {
             adapter.addItem(title, body, bmp);
         }

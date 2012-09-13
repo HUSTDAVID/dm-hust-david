@@ -41,16 +41,17 @@
         </activity>
         
         <activity android:name=".activity.DM_Tab_1Activity"
-             android:screenOrientation="portrait"> 
+             android:screenOrientation="portrait">
              <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>                                                           
+            </intent-filter>   
+                                                                                                                       
         </activity>
         
         <activity android:name=".activity.DM_Tab_2Activity"
-             android:screenOrientation="portrait">  
-                                                                                
+             android:screenOrientation="portrait"> 
+                                                                                               
         </activity>
         
         <activity android:name=".activity.DM_TopicActivity"
@@ -59,8 +60,11 @@
         </activity>
         
         <activity android:name=".activity.DM_HeadLineActivity"
-            android:screenOrientation="portrait">  
-                    
+            android:screenOrientation="portrait">                      
+        </activity>
+        
+        <activity android:name=".activity.DM_CollectActivity"
+            android:screenOrientation="portrait">                      
         </activity>
         
     </application>

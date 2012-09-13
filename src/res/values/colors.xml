@@ -22,6 +22,8 @@
     <color name="btn_normal">#e4e4e4</color>
     <color name="btn_onclicked">#c8c8c8</color>
     
+    <color name="collecte_divider">#eeeeee</color>
+    
     <!-- magazine -->
     <color name="mzine_txt_normal">#353535</color>
     <color name="mzine_txt_onclick">#000000</color>

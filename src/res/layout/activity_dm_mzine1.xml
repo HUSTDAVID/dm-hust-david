@@ -13,7 +13,9 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="0.8dip"
-        android:background="@color/divider" android:layout_marginLeft="10dip" android:layout_marginRight="10dip"/>
+        android:background="@drawable/double_line_hor"
+         android:layout_marginLeft="10dip" 
+         android:layout_marginRight="10dip"/>
 
     <TableRow
         android:id="@+id/top"
@@ -23,7 +25,7 @@
 
         <LinearLayout
             android:id="@+id/layout1_magazine_1"
-            style="@style/magazine_news_layout_left"
+            style="@style/magazine_news_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -46,12 +48,12 @@
         <View
             android:layout_width="0.8dip"
             android:layout_height="fill_parent"
-            android:background="@color/divider" >
+            android:background="@drawable/double_line_ver" >
         </View>
 
         <LinearLayout
             android:id="@+id/layout2_magazine_1"
-            style="@style/magazine_news_layout_right"
+            style="@style/magazine_news_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -69,12 +71,12 @@
                 android:text="@string/mag_body2" />
         </LinearLayout>
     </TableRow>
-
+
     <ImageView
         android:id="@+id/img_magazine_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/temp_magazine_img"/>
+        android:src="@drawable/temp_magazine_img" />
 
     <TableRow
         android:id="@+id/medium"
@@ -83,7 +85,7 @@
 
         <LinearLayout
             android:id="@+id/layout3_magazine_1"
-            style="@style/magazine_news_layout_left"
+            style="@style/magazine_news_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -105,11 +107,11 @@
         <View
             android:layout_width="0.8dip"
             android:layout_height="fill_parent"
-            android:background="@color/divider" />
+            android:background="@drawable/double_line_ver" />
 
         <LinearLayout
             android:id="@+id/layout4_magazine_1"
-            style="@style/magazine_news_layout_right"
+            style="@style/magazine_news_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
@@ -132,7 +134,9 @@
     <View
         android:layout_width="fill_parent"
         android:layout_height="0.8dip"
-        android:background="@color/divider" android:layout_marginLeft="10dip" android:layout_marginRight="10dip"/>
+        android:background="@drawable/double_line_hor" 
+        android:layout_marginLeft="10dip" 
+        android:layout_marginRight="10dip"/>
 
     <TableRow
         android:layout_width="match_parent"

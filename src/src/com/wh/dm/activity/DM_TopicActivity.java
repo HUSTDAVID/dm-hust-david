@@ -20,6 +20,9 @@ public class DM_TopicActivity extends Activity {
     LayoutInflater mInfalater;
     ListView listView;
 
+    ImageView imgLogo;
+    TextView txtTitle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -40,13 +43,20 @@ public class DM_TopicActivity extends Activity {
         ImageView headerImg = (ImageView) headerView.findViewById(R.id.img_topic_header);
         headerImg.setBackgroundResource(R.drawable.banner02);
         TextView headerTxt = (TextView) headerView.findViewById(R.id.txt_topic_header);
-        headerTxt.setText("这里是标题");
+        headerTxt.setText("五月天 请带我一起 将须臾活成不朽");
         listView.addHeaderView(headerView);
+
+        // header
+        imgLogo = (ImageView) findViewById(R.id.img_logo);
+        txtTitle = (TextView) findViewById(R.id.txt_title);
+
+        imgLogo.setVisibility(View.GONE);
+        txtTitle.setText(getResources().getString(R.string.photo));
 
         // set adapter
         TopicAdapter adapter = new TopicAdapter(this);
         Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.topic_img);
-        String title = "足球新闻标题呀";
+        String title = "西班牙超级杯";
         for (int i = 0; i < 5; i++) {
             adapter.addItem(bmp, bmp, title, title);
         }

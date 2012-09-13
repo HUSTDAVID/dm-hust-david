@@ -5,6 +5,7 @@
     android:orientation="horizontal" 
     android:paddingTop="10dip"
     android:paddingLeft="10dip"
+    android:paddingRight="10dip"
     android:background="@drawable/subscibe_left">
 
     <ImageView
@@ -13,6 +14,8 @@
         android:layout_gravity="center_vertical"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dip"
+        android:focusable="false"
+        android:clickable="false"
         android:src="@drawable/sub_left1" />
 
     <TextView
@@ -21,12 +24,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginRight="20dip"
+        android:focusable="false"
+        android:clickable="false"
         android:textSize="18dip"
-        android:text="" />
+        android:text="房产" />
 
     <ImageView
         android:id="@+id/img_sub_right_item"
         android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:clickable="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/sub_left2" />

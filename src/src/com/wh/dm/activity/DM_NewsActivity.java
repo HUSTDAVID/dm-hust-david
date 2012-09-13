@@ -29,7 +29,7 @@ public class DM_NewsActivity extends ActivityGroup {
     private RelativeLayout relMain;
     private LayoutParams params = null;
 
-    private TextView txtTopic;
+    private TextView txtHeadline;
     private TextView txtHouse;
     private TextView txtCar;
     private TextView txtFashion;
@@ -59,7 +59,7 @@ public class DM_NewsActivity extends ActivityGroup {
         txtTitle = (TextView) findViewById(R.id.txt_title);
         txtTitle.setText(getResources().getString(R.string.news));
 
-        txtTopic = (TextView) findViewById(R.id.txt_topic);
+        txtHeadline = (TextView) findViewById(R.id.txt_headline);
         txtHouse = (TextView) findViewById(R.id.txt_house);
         txtCar = (TextView) findViewById(R.id.txt_car);
         txtFashion = (TextView) findViewById(R.id.txt_fashion);
@@ -68,7 +68,7 @@ public class DM_NewsActivity extends ActivityGroup {
 
         itemWidth = getScreenWidth() / 6;
 
-        txtTopic.setOnClickListener(new NewsItemOnClickListener());
+        txtHeadline.setOnClickListener(new NewsItemOnClickListener());
         txtHouse.setOnClickListener(new NewsItemOnClickListener());
         txtCar.setOnClickListener(new NewsItemOnClickListener());
         txtFashion.setOnClickListener(new NewsItemOnClickListener());
@@ -76,7 +76,7 @@ public class DM_NewsActivity extends ActivityGroup {
         txtTravel.setOnClickListener(new NewsItemOnClickListener());
 
         txtSelectedItem = new TextView(this);
-        txtSelectedItem.setText(R.string.topic);
+        txtSelectedItem.setText(R.string.headline);
         txtSelectedItem.setTextColor(Color.WHITE);
         txtSelectedItem.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 18);
         txtSelectedItem.setGravity(Gravity.CENTER);
@@ -101,14 +101,15 @@ public class DM_NewsActivity extends ActivityGroup {
         public void onClick(View v) {
 
             switch (v.getId()) {
-                case R.id.txt_topic:
+                case R.id.txt_headline:
                     SetImageSlide(txtSelectedItem, startX, 0, 0, 0);
                     startX = 0;
-                    txtSelectedItem.setText(R.string.topic);
+                    txtSelectedItem.setText(R.string.headline);
 
                     intent.setClass(DM_NewsActivity.this, DM_HeadLineActivity.class);
                     vMain = getLocalActivityManager().startActivity("Headline", intent)
                             .getDecorView();
+                    Toast.makeText(DM_NewsActivity.this, "Í·Ìõ", Toast.LENGTH_SHORT).show();
                     break;
 
                 case R.id.txt_house:

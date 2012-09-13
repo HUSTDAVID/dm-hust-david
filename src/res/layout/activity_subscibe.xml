@@ -25,6 +25,8 @@
             <ListView
                 android:id="@+id/lv_sub_left"
                 android:layout_width="match_parent"
+                android:dividerHeight="0dip"
+                android:divider="@color/sub_left_bg"
                 android:layout_height="wrap_content" >
             </ListView>
 
@@ -50,8 +52,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="5dip" 
                     android:layout_toLeftOf="@+id/btn_sub_search"    
-                    android:layout_alignTop="@+id/btn_sub_search"   
-                    android:layout_alignBottom="@+id/btn_sub_search"        
+                    android:layout_centerVertical="true"      
                     android:ems="10"
                     android:hint="输入关键字搜索" >
                     <requestFocus />
@@ -61,7 +62,8 @@
                     android:id="@+id/btn_sub_search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"                    
+                    android:layout_alignParentRight="true" 
+                    android:layout_centerVertical="true"                    
                     android:background="@drawable/sub_search"
                     android:text="" />
 
@@ -83,8 +85,8 @@
                 <TextView
                     android:id="@+id/txt_sub_total_num"
                     android:layout_alignParentRight="true"
-                    android:paddingTop="3dip"
-                    android:paddingBottom="3dip"
+                    android:paddingTop="2dip"
+                    android:paddingBottom="2dip"
                     android:paddingLeft="10dip"
                     android:paddingRight="10dip"
                     android:layout_width="wrap_content"

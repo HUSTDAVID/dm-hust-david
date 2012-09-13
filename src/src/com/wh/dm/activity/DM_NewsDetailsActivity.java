@@ -55,10 +55,10 @@ public class DM_NewsDetailsActivity extends Activity {
         btnMyShare = (Button) findViewById(R.id.btn_news_share);
         btnMyFavorite = (Button) findViewById(R.id.btn_news_my_favorite);
 
-        lvNews.addHeaderView(newsMessage);
+        lvNews.addHeaderView(newsMessage, null, false);
         NewsReplyAdapter adapter = new NewsReplyAdapter(this);
         // for (int i = 0; i < 10; i++) {
-        adapter.addItem("手机版网友", "13小时前", "真搞笑，银行多给了就要回，少给了离柜不负责！", "顶");
+        adapter.addItem("手机版网友", "13小时前", "没什么谈的，人不敬我，我何必敬人。", "顶1212");
         // }
         lvNews.setAdapter(adapter);
 

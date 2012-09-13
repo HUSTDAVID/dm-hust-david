@@ -41,8 +41,8 @@
     
      <View 
         android:layout_width="fill_parent"
-        android:layout_height="1dip"
-        android:background="@color/white"/>
+        android:layout_height="1.5dip"
+        android:background="@drawable/doubleline"/>
 
     <TextView
         android:id="@+id/txt_news_body"
@@ -52,5 +52,10 @@
         android:textSize="@dimen/news_normal"
         android:layout_height="wrap_content"
         android:text="" />
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dip"
+        android:background="@drawable/doubleline"/>
 
 </LinearLayout>
